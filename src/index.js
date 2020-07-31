@@ -87,12 +87,9 @@ function priceCalc() {
     if (this.polyurethane === 'true') {
       doorPrice = PRICES.misc.door.polyurethane
     }
-    if (this.weighting > 0) {
-      totalAreaAdditionalPrice += 100
-    }
-    
-    console.log(this.weighting)
-    const totalPrice = this.totalArea * (PRICES[this.complete][this.fitting] + totalAreaAdditionalPrice) + this.doorArea * doorPrice + this.zipperLength * zipperPrice
+      let weighting = this.weighting * 100
+
+    const totalPrice = this.totalArea * (PRICES[this.complete][this.fitting] + totalAreaAdditionalPrice) + weighting + this.doorArea * doorPrice + this.zipperLength * zipperPrice
   
     this.TOTAL_PRICE.innerText = totalPrice
   }
