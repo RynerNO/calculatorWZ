@@ -84,8 +84,7 @@ function priceCalc() {
       }
     })
 
-    this.doorArea = this.DOOR_AREA.
-      
+    this.doorArea = this.DOOR_AREA.value
     this.ZIPPER_RADIO_ELS.forEach((el) =>{
       if (el.checked) {
         this.zipper = el.getAttribute('zipper')
@@ -113,7 +112,7 @@ function priceCalc() {
   this.init = function () {
     this._setValues()
     this._calcTotalPrice()
-
+    
 
     // Не самое оптимальное решение, но особого влияния на производительность быть не должно
     const rangeInputs = [this.TOTAL_AREA_EL, this.DOOR_AREA, this.ZIPPER_LENGTH_EL, this.WEIGHTING_EL]
