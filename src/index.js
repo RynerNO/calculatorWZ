@@ -1,14 +1,25 @@
+// Картинки
 const IMAGES = {
+  // ПВХ
   PVC: {
+    // Скоба-ремень
     bracket: 'https://cdn-ru.bitrix24.ru/b13208222/landing/5ca/5ca57ae3e21a5d437891d5f00954d117/skobapvh_2x_1x.jpg',
-      turning: 'https://cdn-ru.bitrix24.ru/b13208222/landing/caf/caf27d8c4a391f259811a267515b2b77/skobapvh1_2x_1x.jpg',
-      french: 'https://cdn-ru.bitrix24.ru/b13208222/landing/43f/43f189ddbc25d28e739abb4247a2f855/fzpvh_2x_1x.jpg',
-      deaf: 'https://cdn-ru.bitrix24.ru/b13208222/landing/ff1/ff1c5f727cfd164e2c963dafb4896b29/luv122_2x_1x.jpg'
+    // Поворотный
+    turning: 'https://cdn-ru.bitrix24.ru/b13208222/landing/caf/caf27d8c4a391f259811a267515b2b77/skobapvh1_2x_1x.jpg',
+    // Французский
+    french: 'https://cdn-ru.bitrix24.ru/b13208222/landing/43f/43f189ddbc25d28e739abb4247a2f855/fzpvh_2x_1x.jpg',
+    // Глухие
+    deaf: 'https://cdn-ru.bitrix24.ru/b13208222/landing/ff1/ff1c5f727cfd164e2c963dafb4896b29/luv122_2x_1x.jpg'
   },
+  // Оксфорд
   Oxford: {
+    // Скоба-ремень
     bracket: 'https://cdn-ru.bitrix24.ru/b13208222/landing/04b/04b929d2a855750f8a898831c11953d3/skoba120_2x_1x.jpg',
+    // Поворотный
     turning: 'https://cdn-ru.bitrix24.ru/b13208222/landing/ccc/cccd99a16d2690f81c3ff10be7781db9/povorotka_2x_1x.jpg',
+    // Французский
     french: 'https://cdn-ru.bitrix24.ru/b13208222/landing/a43/a43a4ac504fca10dba261c5bd412500f/fz1_2x_1x.jpg',
+    // Глухие
     deaf: 'https://cdn-ru.bitrix24.ru/b13208222/landing/b22/b22a151c56d426563e45965c2b5ec933/luv_2x_1x.jpg'
   
 },

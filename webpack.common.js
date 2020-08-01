@@ -6,14 +6,13 @@ module.exports = {
     publicPath: "/calculatorWZ/dist/",
     filename: 'bundle.js'
   },
-  entry: ['./src/index.js'],
+
   plugins: [new MiniCssExtractPlugin({
     filename: "[name].[hash].css",
     chunkFilename: "chunks/[id].[hash].css",
   }),
   new HtmlWebpackPlugin({
     template: './src/index.html',
-    inject: true,
     cache: true,
     hash: true,
     filename: 'index.html'
