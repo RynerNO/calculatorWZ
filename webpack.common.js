@@ -2,10 +2,6 @@ const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
-  output: {
-    publicPath: "/calculatorWZ/dist/",
-    filename: 'bundle.js'
-  },
 
   plugins: [new MiniCssExtractPlugin({
     filename: "[name].[hash].css",
