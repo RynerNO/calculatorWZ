@@ -2,7 +2,11 @@ const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
-
+  entry: './src/index.js',
+  output: {
+    filename: 'bundle.[hash].js',
+    publicPath: '/calculatorWZ/dist/'
+  },
   plugins: [new MiniCssExtractPlugin({
     filename: "[name].[hash].css",
     chunkFilename: "chunks/[id].[hash].css",
@@ -10,6 +14,7 @@ module.exports = {
   new HtmlWebpackPlugin({
     template: './src/index.html',
     cache: true,
+    inject: true,
     hash: true,
     filename: 'index.html'
   })],
